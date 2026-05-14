@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧋 嚼對不能錯過！珍奶神祕宇宙</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pearl: {
+                            50: '#fdf8f6',
+                            100: '#f2e8e5',
+                            200: '#eaddd7',
+                            300: '#e0cec7',
+                            400: '#d2bab0',
+                            500: '#bfa094',
+                            600: '#a18072',
+                            700: '#977669',
+                            800: '#846358',
+                            900: '#43302b',
+                        },
+                        boba: '#3d2b1f',
+                        sakura: '#ffb7c5',
+                        cream: '#fff5e1',
+                    },
+                    fontFamily: {
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'bubble': 'bubble 4s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        bubble: {
+                            '0%, 100%': { transform: 'scale(1)', opacity: '0.3' },
+                            '50%': { transform: 'scale(1.1)', opacity: '0.6' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #fdf8f6;
+            color: #43302b;
+            overflow-x: hidden;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 8px 32px 0 rgba(183, 153, 135, 0.2);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #3d2b1f 0%, #a18072 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bento-item {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .bento-item:hover {
+            transform: translateY(-8px);
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #fdf8f6;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #d2bab0;
+            border-radius: 10px;
+        }
+
+        .blob {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(180deg, #ffb7c5 0%, #fff5e1 100%);
+            filter: blur(80px);
+            border-radius: 50%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-pearl-300 selection:text-pearl-900">
+
+    <!-- Decorative Background Elements -->
+    <div class="blob top-[-100px] left-[-100px] animate-float"></div>
+    <div class="blob bottom-[10%] right-[-100px] animate-bubble" style="animation-delay: -2s;"></div>
+
+    <main class="max-w-5xl mx-auto px-4 py-8 md:py-16">
+        
+        <!-- Header Section -->
+        <header class="text-center mb-16 relative">
+            <div class="inline-block px-4 py-1 rounded-full bg-pearl-200 text-pearl-800 text-sm font-semibold mb-4 tracking-widest uppercase">
+                Student ID: M11309901
+            </div>
+            <h1 class="text-4xl md:text-7xl font-display font-black mb-6 leading-tight gradient-text">
+                🧋 嚼對不能錯過！<br><span class="text-3xl md:text-5xl font-extrabold opacity-90">帶你入坑「珍珠奶茶」的神秘宇宙</span>
+            </h1>
+            <p class="text-lg md:text-xl text-pearl-600 max-w-2xl mx-auto leading-relaxed font-light">
+                這杯征服全球味蕾的「台灣之光」究竟有什麼魔力？讓我們不再只是「喝」茶，而是要「嚼」茶！從台北街頭的一間小茶館，到世界各地的排隊名店，成為一種跨越國界的文化符號。
+            </p>
+        </header>
+
+        <!-- Banner Media -->
+        <div class="relative w-full rounded-[2rem] overflow-hidden shadow-2xl mb-20 group">
+            <div class="absolute inset-0 bg-pearl-900/10 group-hover:bg-pearl-900/0 transition-all duration-700"></div>
+            <img src='https://opal.google/board/blobs/5ac6bf57-e3a4-4553-819a-5a3753f1bf65' alt='珍珠奶茶視覺藝術' class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-1000" />
+        </div>
+
+        <!-- Section 1: Breakdown (Bento Layout) -->
+        <section class="mb-24">
+            <div class="flex items-center gap-4 mb-10">
+                <span class="w-12 h-1 bg-pearl-400 rounded-full"></span>
+                <h2 class="text-3xl font-black text-pearl-900">一、 珍奶拆解清單：這杯裡面到底裝了什麼？</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                <!-- Tea Base -->
+                <div class="md:col-span-7 glass-card p-8 rounded-3xl bento-item">
+                    <div class="text-4xl mb-4">🍃</div>
+                    <h3 class="text-xl font-bold mb-3 text-pearl-800">不只是茶，是靈魂底蘊</h3>
+                    <p class="text-pearl-600 leading-relaxed">
+                        雖然最早是以阿薩姆或錫蘭紅茶為主流，但現代珍奶的基底已演化成一個龐大的家族。從帶有花香的茉莉綠茶、深邃的鐵觀音，到清新的青茶，茶基底就是珍奶的「基層建設」，決定了整杯飲品的厚度。
+                    </p>
+                </div>
+                
+                <!-- Shaking -->
+                <div class="md:col-span-5 bg-boba text-white p-8 rounded-3xl bento-item flex flex-col justify-center">
+                    <div class="text-4xl mb-4 animate-bounce">⚡</div>
+                    <h3 class="text-xl font-bold mb-3">手搖的藝術</h3>
+                    <p class="text-pearl-200 leading-relaxed text-sm">
+                        透過劇烈震盪，茶與糖、奶能充分融合，並在頂層產生細緻的泡沫。這是 Bubble Tea 名稱的另一個起源，讓每一口喝起來都更加綿密。
+                    </p>
+                </div>
+
+                <!-- Milk -->
+                <div class="md:col-span-5 bg-cream p-8 rounded-3xl bento-item border border-pearl-200">
+                    <div class="text-4xl mb-4">🥛</div>
+                    <h3 class="text-xl font-bold mb-3 text-pearl-800">奶精派 vs. 鮮奶派</h3>
+                    <p class="text-pearl-600 leading-relaxed">
+                        這是一場關於「風味」與「健康」的拉鋸。傳統派擁護奶精的濃醇滑順；而現代派則傾向鮮奶的清爽與天然。
+                    </p>
+                </div>
+
+                <!-- Pearls -->
+                <div class="md:col-span-7 glass-card p-8 rounded-3xl bento-item bg-gradient-to-br from-white to-pearl-100">
+                    <div class="text-4xl mb-4">🌑</div>
+                    <h3 class="text-xl font-bold mb-3 text-pearl-800">Ｑ彈的主角——珍珠</h3>
+                    <p class="text-pearl-600 leading-relaxed">
+                        這是珍奶的靈魂，由樹薯粉製成，透過加水揉製、高溫煮熟，再利用黑糖賦予其黑褐色的光澤。那種介於軟糯與彈牙之間的「Q」感，正是讓全世界淪陷的主因。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: History (Asymmetric Content) -->
+        <section class="mb-24 relative">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-sakura opacity-20 blur-[100px] -z-10"></div>
+            <div class="flex items-center gap-4 mb-10">
+                <span class="w-12 h-1 bg-pearl-400 rounded-full"></span>
+                <h2 class="text-3xl font-black text-pearl-900">二、 史詩級的戰爭：到底是誰「發明」了珍奶？</h2>
+            </div>
+
+            <div class="bg-white/40 border-2 border-dashed border-pearl-300 rounded-[2.5rem] p-8 md:p-12">
+                <div class="flex flex-col md:flex-row gap-12 items-start">
+                    <div class="flex-1">
+                        <p class="text-pearl-700 mb-8 text-lg italic">
+                            回到 1980 年代，那是台灣飲茶文化從傳統熱泡茶轉向冷飲界的關鍵轉折點。關於起源，有著兩位傳奇主角...
+                        </p>
+                        <div class="space-y-8">
+                            <div class="group">
+                                <h4 class="text-xl font-bold text-pearl-900 mb-2 flex items-center gap-2">
+                                    <span class="w-2 h-2 rounded-full bg-pearl-600"></span> 春水堂
+                                </h4>
+                                <p class="text-pearl-600 pl-4 border-l-2 border-pearl-200 group-hover:border-pearl-500 transition-colors">
+                                    主張 1987 年，商品部經理林秀慧將童年喜愛的粉圓加入冰奶茶中，成就了這杯傳奇。
+                                </p>
+                            </div>
+                            <div class="group">
+                                <h4 class="text-xl font-bold text-pearl-900 mb-2 flex items-center gap-2">
+                                    <span class="w-2 h-2 rounded-full bg-pearl-600"></span> 翰林茶館
+                                </h4>
+                                <p class="text-pearl-600 pl-4 border-l-2 border-pearl-200 group-hover:border-pearl-500 transition-colors">
+                                    創辦人涂宗和則表示，他在 1986 年於台南鴨母寮市場看到白色粉圓，進而研發出白色珍珠奶茶。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 bg-pearl-900 text-white p-8 rounded-3xl rotate-1 md:rotate-3 hover:rotate-0 transition-transform">
+                        <div class="text-xs uppercase tracking-widest text-pearl-400 mb-2">Verdict</div>
+                        <h4 class="text-2xl font-black mb-4">法院認證的「集體創作」</h4>
+                        <p class="text-pearl-200 text-sm leading-loose">
+                            這場爭議最終走上了法庭。經過 10 年的訴訟，法院在 2019 年給出了最終答案：珍珠奶茶屬於「新型態飲品」，並非專利產品，雙方都無法證明自己是唯一的始祖。這正是台灣庶民創意「集體爆發」的見證。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Global Impact (Horizontal Scroll Inspired) -->
+        <section class="mb-24">
+            <div class="flex items-center gap-4 mb-10">
+                <span class="w-12 h-1 bg-pearl-400 rounded-full"></span>
+                <h2 class="text-3xl font-black text-pearl-900">三、 珍奶的全球野心：從台灣街頭到 Emoji</h2>
+            </div>
+            
+            <div class="flex flex-wrap gap-4">
+                <div class="flex-1 min-w-[280px] bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl transition-shadow border border-pearl-50">
+                    <span class="text-xs font-bold text-pearl-400 uppercase tracking-tighter">Identity</span>
+                    <h4 class="text-xl font-bold mt-2 mb-3">Boba Life</h4>
+                    <p class="text-sm text-pearl-600 leading-relaxed">
+                        在美國，它被親切地稱為「Boba」。對於許多年輕的亞裔美國人來說，這不僅是流行，更是一種「亞裔身分」的自信與族群連結。
+                    </p>
+                </div>
+                <div class="flex-1 min-w-[280px] bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl transition-shadow border border-pearl-50">
+                    <span class="text-xs font-bold text-pearl-400 uppercase tracking-tighter">Japan Trend</span>
+                    <h4 class="text-xl font-bold mt-2 mb-3">タピる（喝珍奶）</h4>
+                    <p class="text-sm text-pearl-600 leading-relaxed">
+                        2019 年日本爆發了現象級的「珍奶狂熱」，年輕人甚至發展出動詞「タピる」。這股狂潮甚至傳聞連極道都看準商機轉行。
+                    </p>
+                </div>
+                <div class="flex-1 min-w-[280px] bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl transition-shadow border border-pearl-50">
+                    <span class="text-xs font-bold text-pearl-400 uppercase tracking-tighter">Global Standard</span>
+                    <h4 class="text-xl font-bold mt-2 mb-3">SOP 的神力</h4>
+                    <p class="text-sm text-pearl-600 leading-relaxed">
+                        透過高度標準化的 SOP，從定量糖機到自動製冰機，台灣企業將珍奶打造成如同麥當勞般的全球連鎖工業。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Challenges (Split Layout) -->
+        <section class="mb-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="w-12 h-1 bg-red-300 rounded-full"></span>
+                    <h2 class="text-3xl font-black text-pearl-900">四、 歡樂背後的「甜蜜負擔」</h2>
+                </div>
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 flex items-center justify-center text-red-500 font-bold">1</div>
+                        <div>
+                            <h5 class="font-bold text-pearl-800">熱量炸彈警告</h5>
+                            <p class="text-sm text-pearl-600">一杯 700c.c. 全糖珍奶熱量約 600-800 大卡，相當於兩碗白飯，充滿了健康隱憂。</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 flex items-center justify-center text-red-500 font-bold">2</div>
+                        <div>
+                            <h5 class="font-bold text-pearl-800">地球也在哭泣</h5>
+                            <p class="text-sm text-pearl-600">一次性塑膠杯、封口膜、加粗吸管對環境造成巨大負擔，是亟需解決的環保迷思。</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-red-100 flex items-center justify-center text-red-500 font-bold">3</div>
+                        <div>
+                            <h5 class="font-bold text-pearl-800">品質大考驗</h5>
+                            <p class="text-sm text-pearl-600">長途運輸後的珍珠口感管控與茶葉農藥殘留，是對品牌管理的終極測試。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="order-1 md:order-2 bg-pearl-100 rounded-[3rem] p-4 flex items-center justify-center aspect-square relative">
+                <div class="absolute inset-0 border-[16px] border-white/50 rounded-[3rem] pointer-events-none"></div>
+                <div class="text-8xl animate-bounce">⚠️</div>
+            </div>
+        </section>
+
+        <!-- Section 5: Future (Modern Card Grid) -->
+        <section class="mb-24">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-black text-pearl-900 mb-4 italic">未來珍奶長怎樣？</h2>
+                <p class="text-pearl-500">機器人也會搖茶嗎？探索珍奶的進化藍圖</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group glass-card p-8 rounded-3xl hover:bg-pearl-900 hover:text-white transition-all duration-500">
+                    <div class="w-12 h-12 bg-green-100 rounded-xl mb-6 flex items-center justify-center group-hover:bg-green-500 transition-colors">
+                        🌱
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">植物奶大軍</h4>
+                    <p class="text-sm opacity-80 leading-relaxed">燕麥奶、豆乳、杏仁奶正迅速進駐菜單，讓乳糖不耐症族群也能毫無壓力地享受派對。</p>
+                </div>
+                <div class="group glass-card p-8 rounded-3xl hover:bg-pearl-900 hover:text-white transition-all duration-500">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl mb-6 flex items-center justify-center group-hover:bg-blue-500 transition-colors">
+                        🤖
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">AI 搖吧師</h4>
+                    <p class="text-sm opacity-80 leading-relaxed">機械手臂進駐店面。精準的比例控制，讓每一口的味道都如同經過工程師精算般穩定。</p>
+                </div>
+                <div class="group glass-card p-8 rounded-3xl hover:bg-pearl-900 hover:text-white transition-all duration-500">
+                    <div class="w-12 h-12 bg-yellow-100 rounded-xl mb-6 flex items-center justify-center group-hover:bg-yellow-500 transition-colors">
+                        🌈
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">配料宇宙</h4>
+                    <p class="text-sm opacity-80 leading-relaxed">草仔粿、茶凍、甚至酪梨入杯。這種對口感（Texture）的極致追求，是創新的動力。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA / Footer Quote -->
+        <footer class="text-center py-20 border-t border-pearl-200">
+            <div class="text-6xl mb-8">🧋</div>
+            <h3 class="text-3xl font-black text-pearl-900 mb-6">珍珠奶茶的神祕宇宙還在擴張...</h3>
+            <p class="text-xl text-pearl-600 mb-12">你今天「嚼」了嗎？</p>
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="px-8 py-4 bg-boba text-white rounded-full font-bold shadow-lg hover:shadow-2xl hover:scale-105 active:scale-95 transition-all">
+                返回頂部重新探索
+            </button>
+        </footer>
+
+    </main>
+
+    <script>
+        // Subtle scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
